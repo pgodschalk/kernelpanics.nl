@@ -1,0 +1,13 @@
+/* TEAM */
+	Site: https://kernelpanics.nl
+	Location: Leiden, The Netherlands
+
+/* THANKS */
+	Inspiration and humour: Randall "xkcd" Munroe
+	Original terminal implementation: Max "chromakode" Goodhart
+
+/* SITE */
+	Last update: 2020/12/31
+	Standards: HTML5, CSS3, ES6+
+	Components: Axios, Babel, CoreJS, detect-browser, NuxtJS, Tailwind CSS, uuid, Vue Konami, Vue-A11y, Vue.js
+	Software: DefinitelyTyped, ESLint, Git, Husky, Jest, lint-staged, node-fibers, Prettier, Sass, stylelint, TypeScript, Vetur, Visual Studio Code, Vue Test Utils
