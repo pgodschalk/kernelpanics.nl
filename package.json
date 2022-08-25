@@ -33,7 +33,7 @@
     "@sentry/vue": "^7.6.0",
     "@vue-a11y/announcer": "^2.1.0",
     "@vue-a11y/focus-loop": "^0.2.0",
-    "core-js": "^3.23.3",
+    "core-js": "^3.25.0",
     "detect-browser": "^5.3.0",
     "nuxt": "^2.15.8",
     "uuid": "^8.3.2",
