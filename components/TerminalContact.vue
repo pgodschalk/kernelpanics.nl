@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul class="mt-6">
-      <li>trolled lel</li>
-      <li>also ilitka is nub</li>
-      <!-- <li>
+      <li>
         E-mail:
         <a href="mailto:patrick@kernelpanics.nl" rel="author"
           >patrick@kernelpanics.nl</a
@@ -77,15 +75,15 @@
           rel="author external noopener"
           >patrick-godschalk</a
         >
-      </li> -->
+      </li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue"
 
 export default Vue.extend({
-  name: 'TerminalContact',
+  name: "TerminalContact",
 })
 </script>
