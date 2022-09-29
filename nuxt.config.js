@@ -73,6 +73,9 @@ export default {
       },
       { rel: "mask-icon", type: "image/svg", href: "/safari-pinned-tab.svg" },
     ],
+    htmlAttrs: {
+      lang: "en",
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
