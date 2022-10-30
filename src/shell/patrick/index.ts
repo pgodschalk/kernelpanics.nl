@@ -1,3 +1,3 @@
 export default function patrick() {
-  return 'Yes?'
+  return "Yes?"
 }

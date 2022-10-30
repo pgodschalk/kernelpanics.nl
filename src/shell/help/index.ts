@@ -1,3 +1,3 @@
 export default function help() {
-  return 'That would be cheating!'
+  return "That would be cheating!"
 }

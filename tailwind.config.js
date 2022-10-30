@@ -1,10 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./static/**/*.html", "./src/**/*.vue"],
+  content: [],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }

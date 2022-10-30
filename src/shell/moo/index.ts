@@ -1,3 +1,3 @@
 export default function moo() {
-  return 'moo'
+  return "moo"
 }

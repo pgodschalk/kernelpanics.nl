@@ -1,0 +1,18 @@
+{
+  "hosts": {
+    "felucia": [
+      {
+        "public_key": "AAAAC3NzaC1lZDI1NTE5AAAAIJt72wdDR73wd1JlBOtAHUAFJOC2rlVhSfr0y5PxsQnX",
+        "algo": "ssh-ed25519"
+      },
+      {
+        "public_key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFTeZWM8cdxtEQzeKhGQY7f4bgDGV3M5Hpp8Xj088ZXH16pgscV02rvdawHlmnd+n/prxPEgMGn6k42F5+QEPUI=",
+        "algo": "ecdsa-sha2-nistp256"
+      },
+      {
+        "public_key": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCxYbPDEXJnpO131fsZgnSEEN0Fra7BcqevgGd/gtq9APSDhLCqIlK5xevtphjou+1kZiXms/BPoJqpsrBrZRQFEvUXe/vpGno+vBSRwy/PmAFIjL/fEU+HWYiQOIuh8h4u+1rIDrRdagPTZbO+fe1GaZpL3XMB912f1MpWHuZJJIFifT6FQ36ochpx7pPMt/gBqrIqY5MjwJ6dDPtFMQaYpt5Ow4vcrr7RscMQ7oUleQ4H20SF6udPwDNaxPohd7l1fSxZEewwwGu2WvQWm/7CTRTZHxQklguFv3T3VUZHZeEnCy0Q3tE/1CSbn6fIq19aICRW9I7C/h2RHZuV0NvHcvdM6UEYbxw4Xk9vAxOZYq0UFVRX6F5DJW9eY7O1NPzJUgHB4Br102n1Lu8QXDgPyVKgq94I+BTH5a9erYguikIDIDN4OdeiscIgH9HBntYvW9O7BAFRWqrN6RbzveWDusYsUTU48m3KuqFR7Lc3mdWb2ylydmA2maHQJyeINz8=",
+        "algo": "ssh-rsa"
+      }
+    ]
+  }
+}

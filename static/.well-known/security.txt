@@ -1,0 +1,35 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# My security acknowledgements page
+Acknowledgments: https://kernelpanics.nl/acknowledgements
+Canonical: https://kernelpanics.nl/.well-known/security.text
+
+# My security address
+Contact: mailto:patrick@kernelpanics.nl
+Contact: https://kernelpanics.nl/contact
+
+# My OpenPGP key
+Encryption: https://kernelpanics.nl/pgp-key.asc
+
+Expires: 2023-10-24T10:40:16Z
+
+Policy: https://kernelpanics.nl/disclosure-policy
+
+Preferred-Languages: en, nl
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEB7GmgBHKYJyKsPZ8TmwOqhdfE6IFAmNWbBwACgkQTmwOqhdf
+E6Iz3g/+PcPs2G59WjPHpccxJVU8fhKxDWV5SN6IxcAfAQTcourrywEt/yWfUm/n
+MPCsRuiR1v56wOHoEKJFEhBl6kfhkkEDrnX25iYx9Ba1XqHiBytugQ1F/Ct/I2yK
+G3mktAZ8yQPTEzb131r/0in07NpIjx0SfUICWxm48uqRg8+VqftkpMtBpkGHxnBT
+pTluO08HZ9AsPvb1F6+nqjgZyCr6ouIMubiyAJdtrQZBDspjd9RndVSvdmGZjoVl
+RVSHHlwk8FDcIYWeF6nrvbRgc5xxFpkAd38qNzR3sRejwhndbwq+cIpCBcBdb8Ad
+ow4jk5+qffAsB3j4hEuQGyWfoGtXqJ/oNQKkdLUMd2/0Bqg18VpxtfkfX+Zk9Pqi
+dEodIPC85olj/acbv7u45n0UvkCJjAPYFwi5X6lUTj0WI9aCBWNcsuXRhAAzeZgG
+eOsuipFTuRSUZ5r3ujVXNtoEzKmzNqSE5BTvDi34y/aucqlNAZwSTGlDjKstJmLI
+1LWZmE3VT5lurzOKJzeM0mwLR/o9j6oN8B8LpGbRoepUGnYYFmejU8NbCCU3UT/r
+9p20Ve1yua0g8Jew6tyHBWQkj0WxRylozrcWoQN7yEFMHmAhw54IOU2qARN8jSMC
+J2OJAi+/R+5cUO6zV3Q/EAFM7Lh51H9wU+V8gHHZQWLG7KiqXV8=
+=lA5C
+-----END PGP SIGNATURE-----

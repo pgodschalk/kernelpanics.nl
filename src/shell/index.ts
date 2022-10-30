@@ -1,210 +1,205 @@
-import apt from './apt'
-import aptget from './aptget'
-import asl from './asl'
-import bash from './bash'
-import cat from './cat'
-import cheat from './cheat'
-import clear from './clear'
-import code from './code'
-import curl from './curl'
-import date from './date'
-import echo from './echo'
-import ed from './ed'
-import emacs from './emacs'
-import exit from './exit'
-import fg from './fg'
-import find from './find'
-import finger from './finger'
-import fuck from './fuck'
-import halp from './halp'
-import hello from './hello'
-import help from './help'
-import hi from './hi'
-import hint from './hint'
-import i from './i'
-import kill from './kill'
-import locate from './locate'
-import logout from './logout'
-import lpr from './lpr'
-import mail from './mail'
-import make from './make'
-import man from './man'
-import moo from './moo'
-import more from './more'
-import nano from './nano'
-import patrick from './patrick'
-import perl from './perl'
-import ping from './ping'
-import poweroff from './poweroff'
-import pwd from './pwd'
-import reboot from './reboot'
-import restart from './restart'
-import quit from './quit'
-import screen from './screen'
-import serenity from './serenity'
-import shutdown from './shutdown'
-import ssh from './ssh'
-import su from './su'
-import sudo from './sudo'
-import telnet from './telnet'
-import tmux from './tmux'
-import top from './top'
-import uname from './uname'
-import vi from './vi'
-import vim from './vim'
-import website from './website'
-import wget from './wget'
-import who from './who'
-import whoami from './whoami'
-import write from './write'
-import xyzzy from './xyzzy'
-import ls from './ls'
+import apt from "./apt"
+import aptget from "./aptget"
+import asl from "./asl"
+import bash from "./bash"
+import cat from "./cat"
+import cheat from "./cheat"
+import clear from "./clear"
+import code from "./code"
+import curl from "./curl"
+import date from "./date"
+import echo from "./echo"
+import ed from "./ed"
+import emacs from "./emacs"
+import exit from "./exit"
+import find from "./find"
+import finger from "./finger"
+import fuck from "./fuck"
+import halp from "./halp"
+import hello from "./hello"
+import help from "./help"
+import hi from "./hi"
+import hint from "./hint"
+import i from "./i"
+import kill from "./kill"
+import locate from "./locate"
+import logout from "./logout"
+import lpr from "./lpr"
+import mail from "./mail"
+import make from "./make"
+import man from "./man"
+import moo from "./moo"
+import more from "./more"
+import nano from "./nano"
+import patrick from "./patrick"
+import perl from "./perl"
+import pgpSigningPolicy from "./pgp-signing-policy"
+import ping from "./ping"
+import poweroff from "./poweroff"
+import pwd from "./pwd"
+import reboot from "./reboot"
+import restart from "./restart"
+import quit from "./quit"
+import screen from "./screen"
+import serenity from "./serenity"
+import shutdown from "./shutdown"
+import ssh from "./ssh"
+import su from "./su"
+import sudo from "./sudo"
+import telnet from "./telnet"
+import tmux from "./tmux"
+import top from "./top"
+import uname from "./uname"
+import vi from "./vi"
+import vim from "./vim"
+import wget from "./wget"
+import who from "./who"
+import whoami from "./whoami"
+import write from "./write"
+import xyzzy from "./xyzzy"
+import ls from "./ls"
 
 export default function shell(
   input: string,
   asSuperuser: boolean = false
 ): string | ShellObject | Promise<ShellPromise> {
-  const binary = input.trim().split(' ')[0]
+  const binary = input.trim().split(" ")[0]
   const args = input
     // Remove leading and trailing whitespace
     .trim()
     // Collapse multiple spaces into one space
-    .replace(/ +(?= )/g, '')
+    .replace(/ +(?= )/g, "")
     // Array from each word
-    .split(' ')
+    .split(" ")
     // Filter out the binary
     .filter((item, index) => {
       if (index > 0) return item
-      return ''
+      return ""
     })
     // Convert back to a string
-    .join(' ')
+    .join(" ")
 
   switch (binary) {
-    case './website':
-      return website()
-    case 'apt':
+    case "./pgp-signing-policy":
+      return pgpSigningPolicy()
+    case "apt":
       return apt(args, asSuperuser)
-    case 'apt-get':
+    case "apt-get":
       return aptget(args, asSuperuser)
-    case 'asl':
+    case "asl":
       return asl()
-    case 'bash':
+    case "bash":
       return bash()
-    case 'cat':
+    case "cat":
       return cat(args)
-    case 'cheat':
+    case "cheat":
       return cheat()
-    case 'clear':
+    case "clear":
       return clear()
-    case 'code':
+    case "code":
       return code()
-    case 'curl':
+    case "curl":
       return curl(args)
-    case 'date':
+    case "date":
       return date()
-    case 'echo':
+    case "echo":
       return echo()
-    case 'ed':
+    case "ed":
       return ed()
-    case 'emacs':
+    case "emacs":
       return emacs()
-    case 'exit':
+    case "exit":
       return exit()
-    case 'fg':
-      return fg()
-    case 'find':
+    case "find":
       return find(args)
-    case 'finger':
+    case "finger":
       return finger()
-    case 'fuck':
+    case "fuck":
       return fuck()
-    case 'halp':
+    case "halp":
       return halp()
-    case 'hello':
+    case "hello":
       return hello(args)
-    case 'help':
+    case "help":
       return help()
-    case 'hi':
+    case "hi":
       return hi()
-    case 'hint':
+    case "hint":
       return hint()
-    case 'i':
+    case "i":
       return i(args)
-    case 'kill':
+    case "kill":
       return kill()
-    case 'locate':
+    case "locate":
       return locate(args)
-    case 'logout':
+    case "logout":
       return logout()
-    case 'lpr':
+    case "lpr":
       return lpr()
-    case 'ls':
+    case "ls":
       return ls(args)
-    case 'mail':
+    case "mail":
       return mail()
-    case 'make':
+    case "make":
       return make(args, asSuperuser)
-    case 'man':
+    case "man":
       return man(args)
-    case 'moo':
+    case "moo":
       return moo()
-    case 'more':
+    case "more":
       return more()
-    case 'nano':
+    case "nano":
       return nano()
-    case 'patrick':
+    case "patrick":
       return patrick()
-    case 'perl':
+    case "perl":
       return perl()
-    case 'ping':
+    case "ping":
       return ping(args)
-    case 'poweroff':
+    case "poweroff":
       return poweroff(asSuperuser)
-    case 'pwd':
+    case "pwd":
       return pwd()
-    case 'reboot':
+    case "reboot":
       return reboot(asSuperuser)
-    case 'restart':
+    case "restart":
       return restart(asSuperuser)
-    case 'quit':
+    case "quit":
       return quit()
-    case 'screen':
+    case "screen":
       return screen()
-    case 'serenity':
+    case "serenity":
       return serenity()
-    case 'shutdown':
+    case "shutdown":
       return shutdown(asSuperuser)
-    case 'ssh':
+    case "ssh":
       return ssh()
-    case 'su':
+    case "su":
       return su()
-    case 'sudo':
+    case "sudo":
       if (!args) return sudo()
       return shell(args, true)
-    case 'telnet':
+    case "telnet":
       return telnet()
-    case 'tmux':
+    case "tmux":
       return tmux()
-    case 'top':
+    case "top":
       return top()
-    case 'uname':
+    case "uname":
       return uname()
-    case 'vi':
+    case "vi":
       return vi()
-    case 'vim':
+    case "vim":
       return vim()
-    case 'website':
-      return website()
-    case 'who':
+    case "who":
       return who()
-    case 'whoami':
+    case "whoami":
       return whoami()
-    case 'wget':
+    case "wget":
       return wget(args)
-    case 'write':
+    case "write":
       return write()
-    case 'xyzzy':
+    case "xyzzy":
       return xyzzy()
     default:
       return 'Unrecognized command. Type "help" for assistance.'

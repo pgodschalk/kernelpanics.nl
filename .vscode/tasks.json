@@ -1,0 +1,86 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "nuxt build --modern=server"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev",
+      "detail": "nuxt"
+    },
+    {
+      "type": "npm",
+      "script": "generate",
+      "problemMatcher": [],
+      "label": "npm: generate",
+      "detail": "nuxt generate --modern=client"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "label": "npm: start",
+      "detail": "nuxt start --modern=server"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [],
+      "label": "npm: lint",
+      "detail": "npm run lint:js && npm run lint:style && npm run lint:prettier"
+    },
+    {
+      "type": "npm",
+      "script": "lint:js",
+      "problemMatcher": [],
+      "label": "npm: lint:js",
+      "detail": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore ."
+    },
+    {
+      "type": "npm",
+      "script": "lint:prettier",
+      "problemMatcher": [],
+      "label": "npm: lint:prettier",
+      "detail": "prettier --check ."
+    },
+    {
+      "type": "npm",
+      "script": "lint:style",
+      "problemMatcher": [],
+      "label": "npm: lint:style",
+      "detail": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore"
+    },
+    {
+      "type": "npm",
+      "script": "lintfix",
+      "problemMatcher": [],
+      "label": "npm: lintfix",
+      "detail": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix"
+    },
+    {
+      "type": "npm",
+      "script": "prepare",
+      "problemMatcher": [],
+      "label": "npm: prepare",
+      "detail": "husky install"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "label": "npm: test",
+      "detail": "jest --passWithNoTests"
+    }
+  ]
+}

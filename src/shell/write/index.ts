@@ -1,4 +1,4 @@
-import mail from '../mail'
+import mail from "../mail"
 
 export default function write() {
   return mail()

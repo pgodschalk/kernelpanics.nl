@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "codezombiech.gitignore",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "hashhar.gitattributes",
+    "heybourn.headwind",
+    "gitlab.gitlab-workflow",
+    "mrmlnc.vscode-scss",
+    "orta.vscode-jest",
+    "stylelint.vscode-stylelint",
+    "Vue.volar"
+  ]
+}

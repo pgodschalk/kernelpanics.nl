@@ -1,18 +1,25 @@
 export default function locate(args: string) {
-  if (!args) return 'Locate what?'
+  // locate
+  if (!args) return "Locate what?"
 
   switch (args) {
-    case 'ninja':
-      return 'Ninja can not be found!'
-    case 'keys':
-      return 'Have you checked your coat pocket?'
-    case 'joke':
-      return 'Joke found on user.'
-    case 'problem':
-      return 'Problem exists between keyboard and chair.'
-    case 'raptor':
-      return 'BEHIND YOU!!!'
+    // locate ninja
+    case "ninja":
+      return "Ninja can not be found!"
+    // locate keys
+    case "keys":
+      return "Have you checked your coat pocket?"
+    // locate joke
+    case "joke":
+      return "Joke found on user."
+    // locate problem
+    case "problem":
+      return "Problem exists between keyboard and chair."
+    // locate raptor
+    case "raptor":
+      return "BEHIND YOU!!!"
+    // locate $1
     default:
-      return `Locate what?`
+      return "Locate what?"
   }
 }

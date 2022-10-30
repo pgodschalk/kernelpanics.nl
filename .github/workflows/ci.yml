@@ -16,35 +16,31 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [16]
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎
         uses: actions/checkout@master
 
-      - name: Setup node env
-        uses: actions/setup-node@v2.1.2
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node }}
+          check-latest: true
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      - name: Cache node_modules 📦
+        uses: actions/cache@v2.1.4
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-node-
 
-      - name: Install dependencies
-        run: yarn
+      - name: Install dependencies 👨🏻💻
+        run: npm ci --prefer-offline --no-audit
 
-      - name: Run linter
-        run: yarn lint
+      - name: Run linter 👀
+        run: npm run lint
 
-      - name: Run tests
-        run: yarn test
+      - name: Run tests 🧪
+        run: npm run test

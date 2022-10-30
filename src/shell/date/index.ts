@@ -1,3 +1,3 @@
 export default function date() {
-  return 'March 32nd'
+  return "March 32nd"
 }

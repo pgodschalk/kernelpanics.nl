@@ -1,5 +1,5 @@
-import curl from '../curl'
+import curl from "../curl"
 
 export default function screen() {
-  return curl('https://kernelpanics.nl')
+  return curl("https://kernelpanics.nl")
 }

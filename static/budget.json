@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/*",
+    "options": {
+      "firstPartyHostnames": ["kernelpanics.nl", "www.kernelpanics.nl"]
+    }
+  }
+]

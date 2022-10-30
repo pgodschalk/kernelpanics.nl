@@ -1,3 +1,3 @@
 export default function sudo() {
-  return 'sudo what?'
+  return "sudo what?"
 }

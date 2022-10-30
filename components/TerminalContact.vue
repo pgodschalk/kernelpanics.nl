@@ -1,5 +1,31 @@
 <template>
   <div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Patrick Godschalk",
+        "url": "https://kernelpanics.nl",
+        "image": "https://kernelpanics.nl/icon.png",
+        "sameAs": [
+          "https://facebook.com/p.godschalk",
+          "https://twitter.com/kdump8",
+          "https://instagram.com/patrick_godschalk",
+          "https://www.youtube.com/channel/UCkbj02BmMwS01THhB0fgURg",
+          "https://linkedin.com/in/patrick-godschalk",
+          "https://pinterest.com/littleoddlife/",
+          "https://soundcloud.com/patrick-godschalk",
+          "https://www.tumblr.com/argure",
+          "https://github.com/pgodschalk",
+          "https://kernelpanics.nl"
+        ],
+        "jobTitle": "Senior Fullstack Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mozard"
+        }
+      }
+    </script>
     <ul class="mt-6">
       <li>
         E-mail:
@@ -77,6 +103,9 @@
         >
       </li>
     </ul>
+    <p class="mt-6"
+      >OpenPGP Key: <a href="/pgp-key.asc" download>0x4E6C0EAA175F13A2</a></p
+    >
   </div>
 </template>
 

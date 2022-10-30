@@ -1,4 +1,4 @@
-import Vue from 'vue'
-import VueKonami from 'vue-konami'
+import Vue from "vue"
+import VueKonami from "vue-konami"
 
 Vue.use(VueKonami as any)

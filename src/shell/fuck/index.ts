@@ -1,3 +1,3 @@
 export default function fuck() {
-  return 'I have a headache.'
+  return "I have a headache."
 }

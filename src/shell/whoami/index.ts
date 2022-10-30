@@ -1,3 +1,3 @@
 export default function whoami() {
-  return 'You are Richard Stallman.'
+  return "You are Richard Stallman."
 }

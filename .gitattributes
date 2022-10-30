@@ -30,6 +30,7 @@
 *.tsv      text
 *.txt      text
 *.sql      text
+*.epub     diff=astextplain
 
 # Graphics
 *.png      binary
@@ -125,6 +126,7 @@
 *.scm             text
 *.scss            text diff=css
 *.sh              text eol=lf
+.husky/*          text eol=lf
 *.sql             text
 *.styl            text
 *.tag             text
@@ -192,7 +194,7 @@ TODO              text
 .htaccess         text
 *.lock            text -diff
 package.json      text eol=lf
-package-lock.json text -diff
+package-lock.json text eol=lf -diff
 pnpm-lock.yaml    text eol=lf -diff
 .prettierrc       text
 yarn.lock         text -diff

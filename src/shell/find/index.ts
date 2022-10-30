@@ -1,11 +1,15 @@
 export default function find(args: string): Promise<ShellPromise> | string {
-  if (args === 'bunny') {
+  if (args === "bunny") {
+    // find bunny
     return new Promise((resolve, reject) => {
-      fetch('https://source.unsplash.com/random?bunny')
+      fetch("https://source.unsplash.com/random?bunny")
         .then((res) => {
           resolve({
-            type: 'image',
-            data: res.url,
+            type: "image",
+            data: {
+              src: res.url,
+              alt: "Random picture of a bunny",
+            },
           })
         })
         .catch((e) => {
@@ -13,6 +17,7 @@ export default function find(args: string): Promise<ShellPromise> | string {
         })
     })
   } else {
-    return 'What do you want to find? Bunny would be nice.'
+    // find
+    return "What do you want to find? Bunny would be nice."
   }
 }

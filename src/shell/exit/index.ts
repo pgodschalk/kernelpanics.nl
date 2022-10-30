@@ -1,6 +1,6 @@
 export default function exit(): ShellObject {
   return {
-    data: 'Bye.',
-    action: 'exit',
+    data: "Bye.",
+    action: "exit",
   }
 }

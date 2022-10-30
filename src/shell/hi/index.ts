@@ -1,3 +1,3 @@
 export default function hi() {
-  return 'Hi.'
+  return "Hi."
 }
