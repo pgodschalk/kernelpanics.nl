@@ -39,8 +39,8 @@
           <main
             :class="
               !cleared
-                ? `pt-32 px-4 text-white dark:text-white h-screen ${bgColor}`
-                : `px-4 text-white dark:text-white h-screen ${bgColor}`
+                ? `pt-32 px-4 text-white dark:text-white ${bgColor} ${fullHeight}`
+                : `px-4 text-white dark:text-white ${bgColor} ${fullHeight}`
             "
           >
             <!-- show PGP signing policy -->
@@ -245,6 +245,13 @@ export default Vue.extend({
     bgColor() {
       if (this.flash) return "flash bg-black dark:bg-black"
       return "bg-black dark:bg-black"
+    },
+
+    // Return h-class for main div if konami level is 4 or higher, and
+    // PGP Signing Policy is visible
+    fullHeight() {
+      if (this.pgpSigningPolicyVisible && this.konami >= 4) return "h-screen"
+      return ""
     },
 
     // Return konami class based on konami intensity
