@@ -39,8 +39,8 @@
           <main
             :class="
               !cleared
-                ? `pt-32 px-4 text-white dark:text-white ${bgColor}`
-                : `px-4 text-white dark:text-white ${bgColor}`
+                ? `pt-32 px-4 text-white dark:text-white h-screen ${bgColor}`
+                : `px-4 text-white dark:text-white h-screen ${bgColor}`
             "
           >
             <!-- show PGP signing policy -->
