@@ -152,4 +152,7 @@ export default {
   build: {},
 
   devServerHandlers: [],
+  generate: {
+    fallback: true,
+  },
 }
