@@ -297,7 +297,11 @@ export default Vue.extend({
     // Set focus on #readline element, use document instead of ref to avoid
     // issues with SSR
     focusInput() {
-      document.getElementById("readline")?.focus()
+      // Ensure focus is not set when signing policy is visible, to ensure text
+      // selection remains possible
+      if (!this.pgpSigningPolicyVisible) {
+        document.getElementById("readline")?.focus()
+      }
     },
     // Set caret position and character
     setCaret(e: KeyboardEvent) {
