@@ -44,6 +44,7 @@ npm install
 Start the dev server:
 
 ```sh
+export NODE_OPTIONS=--openssl-legacy-provider
 npm run dev
 ```
 
@@ -52,6 +53,7 @@ npm run dev
 ### Build for production
 
 ```sh
+export NODE_OPTIONS=--openssl-legacy-provider
 npm run build && npm run generate
 ```
 
