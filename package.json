@@ -42,10 +42,10 @@
     "nuxt": "^2.15.8",
     "typewriter-vue": "^0.5.19",
     "uuid": "^9.0.0",
-    "vue": "^2.7.13",
+    "vue": "^2.7.14",
     "vue-konami": "^1.1.0",
     "vue-server-renderer": "^2.7.13",
-    "vue-template-compiler": "^2.7.13",
+    "vue-template-compiler": "^2.7.14",
     "webpack": "^4.46.0"
   },
   "devDependencies": {
