@@ -494,6 +494,14 @@ body {
   font-size: 0;
   content: "";
 }
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    // fix viewport issue on iOS
+    // stylelint-disable-next-line
+    height: -webkit-fill-available;
+  }
+}
 </style>
 
 <style scoped lang="scss">
