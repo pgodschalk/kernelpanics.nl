@@ -46,7 +46,7 @@
     "vue-konami": "^1.1.0",
     "vue-server-renderer": "^2.7.13",
     "vue-template-compiler": "^2.7.13",
-    "webpack": "^4.46.0"
+    "webpack": "^5.76.1"
   },
   "devDependencies": {
     "@babel/core": "7.19.6",
